@@ -4,12 +4,7 @@ fetch(url)
 
     .then((data) => {
         let con = document.getElementById("container")
-
-        data.map(item => {
-            let imgg = document.createElement("img")
-            imgg.src = item.file
-            con.appendChild("img")
-            // console.log(item);
-
-        })
+            let img = document.createElement("img")
+            img.src = data.file
+            con.appendChild(img)
     })
